@@ -1,0 +1,22 @@
+{
+    "baseUrl": "https://www.saucedemo.com/",
+    "PageTitle": "Swag Labs",
+    "validUser": {
+        "username": "standard_user",
+        "password": "secret_sauce"
+    },
+
+    "LockedUser": {
+        "username": "locked_out_user",
+        "password": "secret_sauce",
+        "errorMessage": "Epic sadface: Sorry, this user has been locked out."
+    },
+
+    "InvalidUser": {
+        "username": "invalid_user",
+        "password": "invalid_password",
+        "errorMessage": "Epic sadface: Username and password do not match any user in this service"
+    }
+
+    
+}
