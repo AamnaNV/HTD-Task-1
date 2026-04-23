@@ -1,3 +1,4 @@
+//this page uses the locators that we defined in loginPage.ts
 import { Page } from "@playwright/test";
 import { LoginPage } from "../page/loginPage";
 
