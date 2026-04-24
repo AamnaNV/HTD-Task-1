@@ -6,9 +6,9 @@ test.beforeEach(async ({page}) => {
 });
 
 test('TC01 - Valid user should login successfully', async ({page, loginAction}) => {
-loginAction.login(loginData.validUser.username, loginData.validUser.password);
-expect(page).toHaveTitle(loginData.PageTitle);
-expect(page).toHaveURL(/inventory/);
+await loginAction.login(loginData.validUser.username, loginData.validUser.password);
+await expect(page).toHaveTitle(loginData.PageTitle);
+await expect(page).toHaveURL(/inventory/);
 })
 
 test('TC02 - Loced out user should not be allowed to login', async ({page, loginAction}) => {
